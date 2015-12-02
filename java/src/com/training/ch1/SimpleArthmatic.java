@@ -11,8 +11,8 @@ public class SimpleArthmatic {
 	}
 	
 	public SimpleArthmatic(int first,int second){
-		this.firstNum=first;
-		this.secondNum=second;
+		firstNum=first;
+		secondNum=second;
 	}
 	
 	public int Add(){
@@ -20,7 +20,7 @@ public class SimpleArthmatic {
 	}
 	
 	public int subtract(){
-		return (this.firstNum>this.secondNum)?this.firstNum-this.secondNum:this.secondNum-this.firstNum;
+		return (firstNum>secondNum)?firstNum-secondNum:secondNum-firstNum;
 	}
 	
 	public int multiply(){
@@ -28,7 +28,9 @@ public class SimpleArthmatic {
 	}
 	
 	public float divide(){
-		return this.firstNum/this.secondNum;
+		//return firstNum/secondNum;
+		return (float)firstNum/(float)secondNum;
 	}
+	
 
 }
